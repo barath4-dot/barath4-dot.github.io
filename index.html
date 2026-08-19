@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Barath Jai — ECE undergraduate building toward a career as a Java backend developer. Projects in Java, Spring Boot, and systems programming.">
+<title>Barath Jai — Java Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="navbar" id="navbar">
+  <a href="#top" class="logo">barath<span>.dev</span></a>
+
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="navMenu" class="nav-menu">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#now" class="nav-link">Now</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#contact" class="nav-link nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero section">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">// hello world</p>
+        <h1 class="hero-title">Barath Jai</h1>
+        <h2 class="hero-role">Aspiring <span>Java Backend Developer</span></h2>
+        <p class="hero-intro">
+          Electronics &amp; Communication Engineering undergraduate, currently rebuilding
+          my foundations in Java and backend systems — one project, one commit at a time.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="https://github.com/barath4-dot" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">whoami.sh</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="eyebrow">// about</p>
+    <h2 class="section-title">About me</h2>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>
+          I'm a B.E. student at Panimalar Engineering College, majoring in Electronics
+          and Communication Engineering, expected to graduate in 2027. Partway through
+          my degree, I decided to point my energy toward software — specifically,
+          backend development with Java.
+        </p>
+        <p>
+          I'm not chasing a finished resume; I'm building one, deliberately —
+          working through core Java, SQL, and Spring Boot while shipping small,
+          real projects along the way instead of only following tutorials.
+        </p>
+      </div>
+
+      <dl class="about-stats">
+        <div class="stat">
+          <dt>Degree</dt>
+          <dd>B.E., Electronics &amp; Communication</dd>
+        </div>
+        <div class="stat">
+          <dt>College</dt>
+          <dd>Panimalar Engineering College</dd>
+        </div>
+        <div class="stat">
+          <dt>Graduating</dt>
+          <dd>2027</dd>
+        </div>
+        <div class="stat">
+          <dt>Focus</dt>
+          <dd>Java · Spring Boot · PostgreSQL</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="eyebrow">// skills</p>
+    <h2 class="section-title">What I work with</h2>
+    <p class="section-note">A mix of what I use daily and what I'm actively building toward.</p>
+
+    <div class="skills-columns">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>C</li>
+          <li>SQL</li>
+          <li>Python <span class="tag-muted">learning</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Data</h3>
+        <ul>
+          <li>Spring Boot <span class="tag-muted">learning</span></li>
+          <li>REST APIs</li>
+          <li>PostgreSQL</li>
+          <li>JWT Auth <span class="tag-muted">learning</span></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Web Fundamentals</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tooling &amp; Systems</h3>
+        <ul>
+          <li>Git &amp; GitHub</li>
+          <li>Linux (daily driver)</li>
+          <li>Bash scripting</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="eyebrow">// projects</p>
+    <h2 class="section-title">Things I've built</h2>
+    <p class="section-note">
+      A mix of finished tools and active work-in-progress — the messy, real kind of learning.
+    </p>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <p class="project-tag">$ project/cashflow</p>
+        <h3>Cashflow</h3>
+        <p>
+          A full single-page expense and budget tracker — spending charts, budget
+          limits, savings goals, recurring transactions, and CSV/JSON export, all
+          running client-side.
+        </p>
+        <ul class="project-stack">
+          <li>JavaScript</li><li>Charts</li><li>LocalStorage</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="proj-link">Code ↗</a>
+          <a href="#" class="proj-link">Live demo ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <p class="project-tag">$ project/learn-c</p>
+        <h3>C Programming Learning Site</h3>
+        <p>
+          A 27-chapter interactive site for learning C from the ground up — dark
+          themed, with a quiz at the end of every chapter to check understanding.
+        </p>
+        <ul class="project-stack">
+          <li>HTML/CSS</li><li>JavaScript</li><li>Static site</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="proj-link">Code ↗</a>
+          <a href="#" class="proj-link">Live demo ↗</a>
+        </div>
+      </article>
+
+      <article class="project-card project-wip">
+        <p class="project-tag">$ project/clipboard-manager</p>
+        <h3>Wayland Clipboard Manager</h3>
+        <p>
+          A custom clipboard manager for Linux/Wayland — a background monitor daemon
+          paired with a lightweight popup UI, written from scratch in Python.
+        </p>
+        <ul class="project-stack">
+          <li>Python</li><li>Wayland</li><li>Linux</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="proj-link">Code ↗</a>
+          <span class="proj-status">In active development</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- NOW / ROADMAP -->
+  <section id="now" class="section">
+    <p class="eyebrow">// now</p>
+    <h2 class="section-title">Currently building toward</h2>
+    <p class="section-note">
+      I'm working an 18-month roadmap of increasingly complex backend projects.
+      Here's where that's headed:
+    </p>
+
+    <ol class="roadmap">
+      <li><span class="roadmap-index">01</span> CLI grade tracker — Java fundamentals</li>
+      <li><span class="roadmap-index">02</span> Library book REST API — Spring Boot basics</li>
+      <li><span class="roadmap-index">03</span> Expense tracker API — persistence &amp; PostgreSQL</li>
+      <li><span class="roadmap-index">04</span> Task management API — JWT auth, integration testing</li>
+      <li><span class="roadmap-index">05</span> URL shortener — Redis caching</li>
+      <li><span class="roadmap-index">06</span> Deployed job board — CI/CD, capstone</li>
+    </ol>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <p class="eyebrow">// education</p>
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-card">
+      <span class="edu-year">2023 — 2027</span>
+      <div>
+        <h3>Panimalar Engineering College</h3>
+        <p>Bachelor of Engineering — Electronics &amp; Communication Engineering</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <p class="eyebrow">// contact</p>
+    <h2 class="section-title">Let's connect</h2>
+    <p class="section-note">
+      Open to conversations about backend development, internships, or just talking shop.
+    </p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="https://github.com/barath4-dot" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">barath4-dot ↗</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/barath-jai470/" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">barath-jai470 ↗</span>
+      </a>
+      <a class="contact-card" href="mailto:barathj470@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">barathj470@gmail.com ↗</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>barath<span class="accent">.dev</span></span>
+  <span>© 2026 Barath Jai</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
