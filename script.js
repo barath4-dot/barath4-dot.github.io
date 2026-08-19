@@ -22,9 +22,9 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
 
 const lines = [
   { prompt: '$ whoami', out: 'Barath Jai' },
-  { prompt: '$ role', out: 'Aspiring Java Backend Developer' },
-  { prompt: '$ focus', out: 'Java · Spring Boot · PostgreSQL' },
-  { prompt: '$ status', out: 'Learning · Building · Shipping' },
+  { prompt: '$ role', out: 'ECE Student · Aspiring Software Developer' },
+  { prompt: '$ focus', out: 'Learning Java' },
+  { prompt: '$ status', out: 'Learning · Practicing · Building' },
 ];
 
 function renderStatic() {
